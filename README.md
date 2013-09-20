@@ -14,7 +14,7 @@ gem intall  rake
 
 ## RAKE
 
-rake <return>
+rake \<return\>
 
 ```
 rake init                : npm install: download all dependencies.
