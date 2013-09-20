@@ -1,8 +1,9 @@
 ### Welcome to SpellChecker ###
 
-```
-Runs on Port# 8888
-```
+`Port# 8888`
+
+### Homepage 
+    localhost:8899
 
 ## Dependencies 
 
