@@ -21,6 +21,7 @@ rake \<return\>
 rake init                : npm install: download all dependencies.
 rake run                 : run the spell checker
 rake spec                : run unit tests
+rake spec_run            : run unit tests followed by spell checker
 ```
 
 ## Specs
@@ -29,6 +30,7 @@ rake spec                : run unit tests
     
 ## Start SpellChecker
 
+    rake spec_run
     rake run
 
 
