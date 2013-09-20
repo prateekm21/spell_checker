@@ -35,3 +35,6 @@ hdoc 'spec', 'run unit tests'
 task :spec do
   sh "./node_modules/.bin/mocha -R spec --recursive spec"
 end
+
+hdoc 'spec_run', 'run unit tests followed by spell checker'
+task :spec_run => [:spec, :run]
