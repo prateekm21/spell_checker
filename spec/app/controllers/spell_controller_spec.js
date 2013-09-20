@@ -10,6 +10,15 @@ describe('SpellController', function(){
 
   describe('#check_spelling()', function(){
 
+    it('should return 422', function(done){
+      
+      request(server).get('/spell_checker/specs123').end(function(err, res) {
+        (res.statusCode).should.equal(422);
+        (res.body.error).should.equal('Only letters are accepted');
+        done();
+      });
+    });
+
     it('should return response', function(done){
       
       //Hack to stub compound controller
