@@ -1,2 +1,1 @@
-spell_checking
-==============
+### Welcome to CompoundJS ###
