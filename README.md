@@ -9,7 +9,7 @@ Runs on Port# 8888
 ```
 Node.js
 npm install -g mocha
-gem intall  rake
+gem install  rake
 ```
 
 ## RAKE
