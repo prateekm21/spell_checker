@@ -1,4 +1,5 @@
 require 'rake'
+require 'rake/clean'
 
 Home = Rake.original_dir
 
@@ -7,6 +8,16 @@ def hdoc command, desc
   @tasks_help << [command, desc]
 end
 
+ClobberList = [
+  "#{Home}/*.deb",
+  "#{Home}/app/**/*.js",
+  "#{Home}/config/**/*.js",
+  "#{Home}/lib/**/*.js",
+]
+
+CoffeeBin = "node_modules/.bin/coffee"
+
+CLOBBER.include(ClobberList)
 
 task :default => [:help]
 
@@ -38,3 +49,9 @@ end
 
 hdoc 'spec_run', 'run unit tests followed by spell checker'
 task :spec_run => [:spec, :run]
+
+hdoc'compile', 'compile coffee-script codes to javascript.'
+task :compile => [:clobber] do
+  sh "rm -rf "
+  sh "#{CoffeeBin} -o . -c src/"
+end
