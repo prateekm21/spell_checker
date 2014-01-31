@@ -1,6 +1,6 @@
 ### Welcome to SpellChecker ###
 
-#### Also hoted @ http://spellchecker-biggun.rhcloud.com
+#### Also hosted @ http://spellchecker-biggun.rhcloud.com
 
 `Port# 8888`
 
